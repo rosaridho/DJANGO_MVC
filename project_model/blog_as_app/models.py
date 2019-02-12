@@ -20,8 +20,8 @@ class Mentee(models.Model):
     nick_name = models.CharField(max_length = 50)
 
     def __str__(self):
-        return self.name + '  the phone number is:' + self.mobile
-
+        return self.name 
+        
 class BlogPost(models.Model):
     created = models.DateTimeField(default = timezone.now)
     updated = models.DateTimeField(default = timezone.now)

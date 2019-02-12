@@ -1,0 +1,154 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        "Blog | MRRosa"
+    </title>
+    <link rel='stylesheet' href="{%static 'css/bootstrap.min.css' %}">
+    <link rel='stylesheet' href="{%static 'css/css_style.css' %}">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="col-md-12">
+            <hr>
+        </div>
+        <div class="row aboutheader">
+            <div class="col-md-3 offset-md-1">
+                <h4>Alpha Tech Academy</h4>
+            </div>
+            <div class="col-md-7">
+                <nav>
+                    <ul class="nav justify-content-end headerlist">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'home' %}">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'blog' %}">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'mentor' %}">Mentor</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'mentee' %}">Mentee</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'author' %}">Author</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="album">
+        <div class="container">
+            <div class="row ">
+                <div class="col-12 text-center">
+                    <div id = "paragraf1">
+                        <img id="logoata" src="{% static 'img/alpha-logo.png' %}"/>
+                        <h2>Alpha Tech Academy</h2>
+                        <p>Alpha Tech Academy is a tech talent incubator that gives everyone (even non IT background)
+                                a chance to be a professional Tech Talent within 3 months. Contact Person: Email: academy@alphatech.id
+                                Mobile phone: 0877 9609 9530 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-fluid">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 offset-md-3 col-sm-6 col-6">
+                    <img id="kendalapulsa" src="{% static 'img/kendala-sepulsa.jpg' %}"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 offset-md-3 col-sm-6 col-6">
+                    <p>September 25, 2018</p>
+                </div>
+                <div class="col-md-2 offset-md-3 col-sm-6 col-6">
+                    <p>0 comment</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 offset-md-3 col-sm-6 col-6">
+                    <div id="paragraf2">
+                        <h4>Punya Kendala? Segera Hubungi Customer Service sepulsa!</h4>
+                        <p>Bagi Sepulsa, kepuasaan pelanggan adalah yang utama. Kami senantiasa mendengarkan keluhan maupun kendala
+                            kendala yang kamu hadapi selama melakukan transaksi di Sepulsa. Umumnya pelanggan Sepulsa menghadapi
+                            kendala sebagai berikut: Status Order Pending Jika transaksi pembayaran sudah selesai, namun status 
+                            order kamu masih pending dalam jangka waktu 15 menit, segera hubungi tim Customer Service dengan
+                            menyetarakan email...
+                            <br>
+                            <div id="paragraf2_link">
+                                <a href="https://www.sepulsa.com/">Baca Selengkapnya</a>
+                            </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 offset-md-3 col-sm-6 col-6">
+                    <div id="sms">
+                        <img id="sms" src="{% static 'img/sms.png' %}"/>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 offset-md-3 col-sm-6 col-6">
+                    <p>September 25, 2018</p>
+                </div>
+                <div class="col-md-2 offset-md-3 col-sm-6 col-6">
+                    <p>0 comment</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 offset-md-3 col-sm-6 col-6">
+                    <div id="paragraf2">
+                        <h4>OTP, Si Kode Rahasia nan Berbahaya</h4>
+                        <p> Kemudahan dalam berbagai transaksi perbankan memang banyak memberikan
+                            keuntungan bagi nasabah. Bayangkan saja, aktivitas jual beli yang pada awalnya
+                            membutuhkan waktu dan tempat, kini bisa dilakukan tanpa perlu beranjak dan 
+                            tempat duduk kamu dan pembayaran lunas dalam hitungan detik dengan transaksi
+                            online. Namun tanpa disadari, kemudahan tersebut bukan tanpa celah. Sebelum 
+                            kita membahas lebih ...
+                            <br>
+                            <div id="paragraf2_link">
+                                <a href="https://www.sepulsa.com/">Baca Selengkapnya</a>
+                            </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="footer1">
+            <div class="row footer"> 
+                <div class="col-md-2 offset-md-2">
+                    <h4>Our Product:</h4>
+                </div>
+                <div class="col-md-1">
+                    <img src="{% static 'img/logo-grey-alphapay.png' %}"/>
+                </div>
+                <div class="col-md-1 offset-md-1">
+                    <img src="{% static 'img/logo-grey-sepulsa.png' %}"/>
+                </div>
+                <div class="col-md-1 offset-md-1">
+                    <img src="{% static 'img/logo-grey-alphabill.png' %}"/>
+                </div>
+            </div>
+        </div>
+        <div class="footer2">
+            <div class="row footer"> 
+                <div class="col-md-12">
+                    <h4>Contact Person: Mobile Phone: 0877 9609 9530. Email: academy@alphatech.id</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
