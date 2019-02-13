@@ -116,9 +116,13 @@ a {
 
 #authorpict{
     padding-top: 10px;
-    width: 70%;
+    width: 50%;
 }
 
 #backgroundlink{
     background-color: rgb(3, 247, 166); 
+}
+
+.album{
+    background-color: rgb(76, 211, 245);
 }

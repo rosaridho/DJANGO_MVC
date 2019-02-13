@@ -6,5 +6,3 @@ urlpatterns = [
     path('blog_new', views.input_blog, name='input_blog'),
     path('<int:post_id>', views.idpost_blog, name='idpost_blog'),
 ]
-
-    
