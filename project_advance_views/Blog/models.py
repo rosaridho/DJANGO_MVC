@@ -8,9 +8,10 @@ from django.utils import timezone
 class Artikel(models.Model):
     title = models.CharField(max_length = 100)
     isi = models.TextField(max_length = 1024)
-    tanggal = models.DateTimeField(default = timezone.now)
+    tanggal = models.DateField(default = timezone.now)
     jumlahComment = models.CharField(max_length = 100)
-    gambar = models.ImageField(upload_to='img')
+    gambar = models.ImageField(upload_to='blog')
+    linkComment = models.CharField(max_length = 100)
 
     def __str__(self):
         return self.title

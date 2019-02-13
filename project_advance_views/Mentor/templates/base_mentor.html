@@ -1,21 +1,29 @@
+{% extends 'base.html' %}
 {% load static %}
-
-<html>
-    <head>
-        <link rel="stylesheet" href="{% static 'css_style.css' %}">
-    </head>
-    <body>
-        <div class="row">
-            <div class="col-md-12 text-center">Daftar Mentor</div>
-        </div>
-        {% for data in mentor_obj %}
-        <div class="row">
-            <div class="col-md-8">
-                <img src="{{data.profilePict}}"/>
-                <h2>{{data.nama}}</h2>
-                <small>Pesan : {{data.pesan}}</small><br>
+{% block content %}
+<div class="container-fluid">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 offset-md-5 col-sm-12 col-12">
+                    <h2>Our Mentor</h2>
+                </div>
             </div>
+            {% for data in mentor_obj %}
+            <div class="row">
+                <div class="col-md-6 offset-md-1 col-sm-12 col-12">
+                    <div id="menteepict">
+                        <img id="menteepict" src= "../../media/{{data.profilePict}}"/>
+                    </div>
+                </div>
+                <div class="col-md-4 offset-md-0 col-sm-12 col-12">
+                    <div id="menteecomment">
+                        <h3>{{data.nama}}</h3>
+                        <h6>{{data.jobPosition}} {{data.wokingExp}})</h6>
+                        <p>{{data.pesan}}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
         </div>
-        {% endfor %}
-    </body>
-</html>
+    </div>
+{% endblock %}

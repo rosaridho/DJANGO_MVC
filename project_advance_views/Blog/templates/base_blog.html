@@ -1,20 +1,38 @@
+{% extends 'base.html' %}
 {% load static %}
+{% block content %}
 
-<html>
-    <head>
-        <link rel="stylesheet" href="{% static 'css_style.css' %}">
-    </head>
-    <body>
-        <div class="row">
-            <div class="col-md-12 text-center">Daftar Artikel</div>
-        </div>
-        {% for data in artikel_obj %}
-        <div class="row">
-            <div class="col-md-8">
-                <h2>{{data.title}}</h2>
-                <small>Isi : {{data.isi}}</small><br>
+    <div class="container-fluid">
+        <div class="container-fluid">
+            {% for data in artikel_obj %}
+            <div class="row">
+                <div class="col-md-12 offset-md-3 col-sm-6 col-6">
+                    <img id="kendalapulsa" src="../../media/{{data.gambar}}"/>
+                </div>
             </div>
+            <div class="row">
+                <div class="col-md-2 offset-md-3 col-sm-6 col-6">
+                    <p>{{data.tanggal}}</p>
+                </div>
+                <div class="col-md-2 offset-md-3 col-sm-6 col-6">
+                    <p>{{data.jumlahComment}} comment</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 offset-md-3 col-sm-6 col-6">
+                    <div id="paragraf2">
+                        <h4>{{data.title}}</h4>
+                        <p>{{data.isi}}
+                            <br>
+                            <div id="paragraf2_link">
+                                <a href="{{data.linkComment}}">Baca Selengkapnya</a>
+                            </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
         </div>
-        {% endfor %}
-    </body>
-</html>
+    </div>
+    
+{% endblock %}

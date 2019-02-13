@@ -8,7 +8,7 @@ from django.utils import timezone
 class Menteebase(models.Model):
     nama = models.CharField(max_length = 100)
     pesan = models.TextField(max_length = 1024)
-    profilePict = models.ImageField(upload_to='img')
+    profilePict = models.ImageField(upload_to='mentee')
 
     def __str__(self):
         return self.nama

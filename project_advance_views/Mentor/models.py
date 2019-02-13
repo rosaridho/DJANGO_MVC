@@ -8,7 +8,7 @@ from django.utils import timezone
 class Mentorbase(models.Model):
     nama = models.CharField(max_length = 100)
     pesan = models.TextField(max_length = 1024)
-    profilePict = models.ImageField(upload_to='img')
+    profilePict = models.ImageField(upload_to='mentor')
     wokingExp = models.TextField(max_length = 100)
     jobPosition = models.CharField(max_length = 100)
 
