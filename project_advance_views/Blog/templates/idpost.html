@@ -1,32 +1,41 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-    
     <div class="container-fluid">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-6 offset-md-3 col-sm-6 col-6">
-                    <div id="paragraf2">
-                        <h4>Punya Kendala? Segera Hubungi Customer Service sepulsa!(Lanjutan) </h4>
-                        <p>
-                            Harap menghubungi nomor berikut jika anda ingin menghubungi CS sepulsa
-                            02187846984. Selamat menikmati,,,, Kendala
-                        </p>
-                    </div>
+                <div class="col-md-12 offset-md-5 col-sm-12 col-12">
+                    <a href="blog_new">Tambah blog</a>
+                </div>
+            </div>
+            {% for data in artikel_obj %}
+            <div class="row">
+                <div class="col-md-12 offset-md-3 col-sm-6 col-6">
+                    <img id="kendalapulsa" src="../../media/{{data.gambar}}"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 offset-md-3 col-sm-6 col-6">
+                    <p>{{data.tanggal}}</p>
+                </div>
+                <div class="col-md-2 offset-md-3 col-sm-6 col-6">
+                    <p>{{data.jumlahComment}} comment</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6 offset-md-3 col-sm-6 col-6">
                     <div id="paragraf2">
-                        <h4>OTP, Si Kode Rahasia nan Berbahaya</h4>
-                        <p>
-                            Harap menghubungi nomor berikut jika anda ingin menghubungi CS sepulsa
-                            02187846984. Selamat menikmati,,,, Si kode rahasia
+                        <h4>{{data.title}}</h4>
+                        <p>{{data.isi}}
+                            <br>
+                            <div id="paragraf2_link">
+                                <a href="../blog">Kembali ke blog</a>
+                            </div>
                         </p>
                     </div>
                 </div>
             </div>
+            {% endfor %}
         </div>
     </div>
-    
 {% endblock %}

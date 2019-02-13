@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_list_or_404
 from .forms import PostForm
 from .models import Artikel
 
@@ -6,6 +6,7 @@ from .models import Artikel
 def base_blog(request):
     artikel_obj = Artikel.objects.all()
     return render(request, 'base_blog.html', {'artikel_obj':artikel_obj})
+
 
 def input_blog(request):
     if request.method == "POST":
@@ -19,6 +20,6 @@ def input_blog(request):
     return render(request, 'blog_new.html', {'form':form})
 
 
-def idpost(request):
-    idpost_obj = Artikel.objects.all()
-    return render(request, 'idpost.html', {'idpost_obj':idpost_obj})
+def idpost_blog(request, post_id):
+    post_num = get_list_or_404(Artikel, id=post_id)
+    return render(request, 'idpost.html', {'artikel_obj':post_num})

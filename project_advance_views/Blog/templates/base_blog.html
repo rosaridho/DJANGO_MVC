@@ -6,7 +6,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12 offset-md-5 col-sm-12 col-12">
-                    <a href="blog_new">Tambah blog</a>
+                    <a id="backgroundlink" href="blog_new">Tambah blog</a>
                 </div>
             </div>
             {% for data in artikel_obj %}
@@ -27,10 +27,10 @@
                 <div class="col-md-6 offset-md-3 col-sm-6 col-6">
                     <div id="paragraf2">
                         <h4>{{data.title}}</h4>
-                        <p>{{data.isi}}
+                        <p>{{data.isi|truncatewords:35}}
                             <br>
                             <div id="paragraf2_link">
-                                <a href="{{data.linkComment}}">Baca Selengkapnya</a>
+                                <a href="{% url 'idpost_blog' post_id=data.id %}">Baca Selengkapnya</a>
                             </div>
                         </p>
                     </div>
