@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.aboutheader {
+    background-color:white
+}
+
+.nav {
+    font-weight: 700;
+    font-size: 14px;
+    font-family: sans-serif;
+    background-color:white;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+
+a {
+    color: black;
+    background-color:white;
+    text-decoration: none;
+    text-align: center;
+}
+
+#paragraf2_link a{
+    color: blue;
+}
+
+#paragraf1{
+    padding: 5% 32% 2% 32%;
+    background-color: rgb(76, 211, 245);
+    margin: 0%;
+    color:white;
+} 
+
+#logoata{
+    width: 25%;
+    object-fit: cover;
+}
+
+#paragraf2 h2{
+    color: black;
+    padding: 5% 0% 0% 0%;
+    margin: 0%;
+}
+
+#paragraf2 p{
+    color: black;
+    padding: 0% 0% 5% 0%;
+    margin: 0%;
+}
+
+#benefit_img{
+    padding: 30% 0% 25% 0%;
+    margin: 0%;
+}
+
+#paragraf3 h2{
+    color: black;
+    padding: 0% 0% 5% 0%;
+    margin: 0%;
+}
+
+.title-section{
+    padding-bottom: 0px;
+}
+
+.pictures{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border: 1px;
+}
+
+.footer1{
+    background-color: rgb(76, 211, 245);
+    margin: 0%;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+    padding: 0%;
+}
+
+.footer2 h4{
+    background-color: black;
+    color: white;
+    margin: 0%;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+    font-size: 18px;
+}
+
+#kendalapulsa{
+    padding-top: 20px;
+    width: 50%;
+}
+
+#sms{
+    padding-top: 0px;
+    width: 70%;
+}
+
+#menteepict{
+    padding-top: 20px;
+    width: 75%;
+    padding-bottom: 0px;
+    margin: 0%;
+}
+
+#menteecomment{
+    padding-top: 100px;
+    margin: 0%;
+}
+
+#boldsebagian{
+    font-weight : bold;
+}
+
+#authorpict{
+    padding-top: 10px;
+    width: 70%;
+}

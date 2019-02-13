@@ -1,0 +1,20 @@
+{% load static %}
+
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'css_style.css' %}">
+    </head>
+    <body>
+        <div class="row">
+            <div class="col-md-12 text-center">Daftar Artikel</div>
+        </div>
+        {% for data in artikel_obj %}
+        <div class="row">
+            <div class="col-md-8">
+                <h2>{{data.title}}</h2>
+                <small>Isi : {{data.isi}}</small><br>
+            </div>
+        </div>
+        {% endfor %}
+    </body>
+</html>

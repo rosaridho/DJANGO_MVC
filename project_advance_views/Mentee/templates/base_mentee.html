@@ -1,0 +1,21 @@
+{% load static %}
+
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'css_style.css' %}">
+    </head>
+    <body>
+        <div class="row">
+            <div class="col-md-12 text-center">Daftar Mentee</div>
+        </div>
+        {% for data in mentee_obj %}
+        <div class="row">
+            <div class="col-md-8">
+                <img src="{{data.profilePict}}"/>
+                <h2>{{data.nama}}</h2>
+                <small>Pesan : {{data.pesan}}</small><br>
+            </div>
+        </div>
+        {% endfor %}
+    </body>
+</html>
